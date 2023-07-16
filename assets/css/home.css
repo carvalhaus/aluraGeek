@@ -1,0 +1,39 @@
+.btn.login {
+  width: 8.313rem;
+}
+
+.ads-bg {
+  background: no-repeat
+    url("https://images.unsplash.com/photo-1574387324389-2366ec67539c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+  height: 12rem;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.ads-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  justify-content: flex-end;
+  padding: 1rem;
+  width: 100%;
+}
+
+.ads-text > h2 {
+  color: #fff;
+  font-size: 1.375rem;
+}
+
+.ads-text > p {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.btn-filled.ads-btn {
+  width: 40%;
+}

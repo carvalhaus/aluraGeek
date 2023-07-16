@@ -1,0 +1,147 @@
+:root {
+  --blue-10: #eaf2fd;
+  --blue-100: #2a7ae4;
+  --black-30: #c8c8c8;
+  --black-50: #a2a2a2;
+  --black-100: #464646;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--black-100);
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  width: 100%;
+}
+
+.icon {
+  color: var(--black-100);
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.logo {
+  width: 6.25rem;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid var(--blue-100);
+  color: var(--blue-100);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+}
+
+.footer {
+  align-items: center;
+  background-color: var(--blue-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.logo.footer {
+  padding: 0;
+  width: 11rem;
+}
+
+.list {
+  padding: 1rem;
+  text-align: center;
+}
+
+.list > li {
+  padding-bottom: 1rem;
+}
+
+.contact-us {
+  width: 100%;
+}
+
+.contact-us > p {
+  font-weight: 700;
+}
+
+.contact-us > form {
+  padding: 0.5rem 0;
+}
+
+.name {
+  background: #fff;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.name > p {
+  color: var(--black-50);
+}
+
+.name > input {
+  border: none;
+  outline: none;
+}
+
+.message {
+  background: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: inline-block;
+  height: 4.125rem;
+  outline: none;
+  padding: 1rem;
+  resize: none;
+  width: 100%;
+}
+
+.message::placeholder {
+  color: var(--black-50);
+}
+
+.btn-filled {
+  background: var(--blue-100);
+  border: none;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  width: 55%;
+}
+
+.developer {
+  font-weight: 500;
+  padding: 2rem;
+  text-align: center;
+}

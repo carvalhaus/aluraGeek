@@ -3,11 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
     <title>Alura Geek - Home</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="" />
+    <header class="header">
+      <img src="assets/images/logo.svg" alt="Logo AluraGeek" class="logo" />
+      <button class="btn login">Login</button>
+      <i data-feather="search" class="icon"></i>
     </header>
+
+    <main>
+      <section class="ads">
+        <div class="ads-bg"></div>
+        <div class="ads-text">
+          <h2>Julho Promocional</h2>
+          <p>Produtos selecionados com 33% de desconto</p>
+          <button class="btn-filled ads-btn">Ver Ofertas</button>
+        </div>
+      </section>
+
+      <section class="starwars-products">
+        <div class="starwars-products__title">
+          <h3>Star Wars</h3>
+          <p>Ver tudo <i data-feather="arrow-right"></i></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <img
+          src="assets/images/logo.svg"
+          alt="Logo AluraGeek"
+          class="logo footer"
+        />
+
+        <ul class="list">
+          <li>Quem somos nós</li>
+          <li>Política de privacidade</li>
+          <li>Programa fidelidade</li>
+          <li>Nossas lojas</li>
+          <li>Quero ser franqueado</li>
+          <li>Anuncie aqui</li>
+        </ul>
+
+        <div class="contact-us">
+          <p>Fale conosco</p>
+          <form>
+            <label for="name" class="name">
+              <p>Nome</p>
+              <input type="text" />
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              class="message"
+              cols="30"
+              rows="5"
+              placeholder="Escreva um mensagem"
+            ></textarea>
+          </form>
+          <button class="btn-filled">Enviar mensagem</button>
+        </div>
+      </section>
+
+      <p class="developer">Desenvolvido por João Pedro de Carvalho Oliveira</p>
+    </footer>
   </body>
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
 </html>

@@ -16,23 +16,37 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>Alura Geek - Home</title>
   </head>
   <body>
     <header class="header">
-      <img src="assets/images/logo.svg" alt="Logo AluraGeek" class="logo" />
-      <i data-feather="search" class="icon"></i>
+      <div class="nav">
+        <img
+          src="../assets/images/logo.svg"
+          alt="Logo AluraGeek"
+          class="logo"
+        />
+        <label for="search-bar" class="search-bar">
+          <input
+            type="text"
+            id="search-bar"
+            class="input"
+            placeholder="O que deseja encontrar?"
+          />
+          <i data-feather="search" class="input-icon"></i>
+        </label>
+      </div>
+      <button class="btn login">Login</button>
+      <i data-feather="search" class="search"></i>
     </header>
 
-    <main>
-      
-    </main>
+    <main></main>
 
     <footer>
       <section class="footer">
         <img
-          src="assets/images/logo.svg"
+          src="../assets/images/logo.svg"
           alt="Logo AluraGeek"
           class="logo footer"
         />
@@ -62,7 +76,7 @@
               placeholder="Escreva um mensagem"
             ></textarea>
           </form>
-          <button class="submit-btn">Enviar mensagem</button>
+          <button class="btn-filled">Enviar mensagem</button>
         </div>
       </section>
 

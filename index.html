@@ -22,9 +22,20 @@
   </head>
   <body>
     <header class="header">
-      <img src="assets/images/logo.svg" alt="Logo AluraGeek" class="logo" />
+      <div class="nav">
+        <img src="assets/images/logo.svg" alt="Logo AluraGeek" class="logo" />
+        <label for="search-bar" class="search-bar">
+          <input
+            type="text"
+            id="search-bar"
+            class="input"
+            placeholder="O que deseja encontrar?"
+          />
+          <i data-feather="search" class="input-icon"></i>
+        </label>
+      </div>
       <button class="btn login">Login</button>
-      <i data-feather="search" class="icon"></i>
+      <i data-feather="search" class="search"></i>
     </header>
 
     <main>
@@ -37,30 +48,188 @@
         </div>
       </section>
 
-      <section class="starwars-products">
-        <div class="starwars-products__title">
+      <section class="products-list" id="starwars">
+        <div class="title">
           <h3>Star Wars</h3>
-          <p>Ver tudo <i data-feather="arrow-right"></i></p>
+          <a href="#" class="more"
+            >Ver tudo <i data-feather="arrow-right" class="arrow"></i>
+          </a>
+        </div>
+
+        <div class="products">
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+          
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+          
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-list" id="consoles">
+        <div class="title">
+          <h3>Consoles</h3>
+          <a href="#" class="more"
+            >Ver tudo <i data-feather="arrow-right" class="arrow"></i>
+          </a>
+        </div>
+
+        <div class="products">
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-list" id="random">
+        <div class="title">
+          <h3>Diversos</h3>
+          <a href="#" class="more"
+            >Ver tudo <i data-feather="arrow-right" class="arrow"></i>
+          </a>
+        </div>
+
+        <div class="products">
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
+
+          <div class="product">
+            <img
+              src="assets/images/profile.png"
+              alt="example"
+              class="product__img"
+            />
+            <p class="description">Product XYZ</p>
+            <p class="price">R$ 60,00</p>
+            <a class="more" href="#">Ver produto</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
       <section class="footer">
-        <img
-          src="assets/images/logo.svg"
-          alt="Logo AluraGeek"
-          class="logo footer"
-        />
-
-        <ul class="list">
-          <li>Quem somos nós</li>
-          <li>Política de privacidade</li>
-          <li>Programa fidelidade</li>
-          <li>Nossas lojas</li>
-          <li>Quero ser franqueado</li>
-          <li>Anuncie aqui</li>
-        </ul>
+        <div class="links">
+          <img
+            src="assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo footer"
+          />
+          <ul class="list">
+            <li>Quem somos nós</li>
+            <li>Política de privacidade</li>
+            <li>Programa fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+        </div>
 
         <div class="contact-us">
           <p>Fale conosco</p>

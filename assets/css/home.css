@@ -1,10 +1,11 @@
-.btn.login {
-  width: 8.313rem;
+.ads {
+  height: 12rem;
 }
 
 .ads-bg {
   background: no-repeat
     url("https://images.unsplash.com/photo-1574387324389-2366ec67539c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
   background-size: cover;
   height: 12rem;
   position: absolute;
@@ -16,7 +17,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  height: 12rem;
+  height: 100%;
   justify-content: flex-end;
   padding: 1rem;
   width: 100%;
@@ -35,5 +36,108 @@
 }
 
 .btn-filled.ads-btn {
-  width: 40%;
+  width: 7.5rem;
+}
+
+.products-list {
+  padding: 1rem;
+  width: 100%;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.arrow {
+  stroke: var(--blue-100);
+  height: 1rem;
+  margin-left: 0.25rem;
+  width: 1rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  width: 48%;
+}
+
+.product .product__img {
+  width: 100%;
+}
+
+.product .description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.product .price {
+  font-weight: 700;
+}
+
+.more {
+  align-items: center;
+  color: var(--blue-100);
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .ads,
+  .ads-bg {
+    height: 22rem;
+  }
+
+  .ads-text {
+    padding: 2rem;
+  }
+
+  .ads-text > h2 {
+    font-size: 3.25rem;
+  }
+
+  .ads-text > p {
+    font-size: 1.375rem;
+    padding: 1rem 0;
+  }
+
+  .products-list {
+    padding: 2rem;
+  }
+
+  .products {
+    flex-wrap: nowrap;
+  }
+
+  .product {
+    width: 23.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ads-text {
+    padding: 2rem 4rem;
+  }
+
+  .products-list {
+    padding: 2rem 4rem;
+  }
+
+  .product {
+    width: 15.5%;
+  }
 }

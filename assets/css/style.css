@@ -86,6 +86,7 @@ main {
   background: transparent;
   border: 1px solid var(--blue-100);
   color: var(--blue-100);
+  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0.75rem 1rem;
@@ -152,6 +153,11 @@ main {
 .name > input {
   border: none;
   outline: none;
+  width: 100%;
+}
+
+.name > input:focus {
+  font-size: 1.125rem;
 }
 
 .message {
@@ -176,6 +182,7 @@ main {
   background: var(--blue-100);
   border: none;
   color: #fff;
+  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 0.75rem 1rem;

@@ -1,8 +1,28 @@
 {
-  "starWars": [
+  "products": [
     {
       "id": 1,
-      "product": "Caneca Star wars"
+      "categories": "starwars",
+      "product_name": "Caneca StormTrooper",
+      "price": 54.99,
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/stormtrooper-mug.png",
+      "description": "Com um design único e detalhado, esta caneca é uma representação fiel do icônico capacete StormTrooper, tornando-a um item indispensável para qualquer fã da saga. Fabricada em porcelana de alta qualidade, a caneca tem uma capacidade de 500 ml."
+    },
+    {
+      "id": 2,
+      "categories": "starwars",
+      "product_name": "Capacete Darth Vader Lego",
+      "price": 799.99,
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/darth-vader-lego.png",
+      "description": "Capacete Darth Vader é de tamanho compacto e possui um suporte de exibição com uma placa de identificação para completar uma peça central impressionante que aprimorará a decoração da sua casa ou local de trabalho."
+    },
+    {
+      "id": 3,
+      "categories": "starwars",
+      "product_name": "Poster Yoda",
+      "price": 39.99,
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/yoda-picture.png",
+      "description": "Capacete Darth Vader é de tamanho compacto e possui um suporte de exibição com uma placa de identificação para completar uma peça central impressionante que aprimorará a decoração da sua casa ou local de trabalho."
     }
   ]
 }

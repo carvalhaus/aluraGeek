@@ -23,6 +23,22 @@
       "price": 39.99,
       "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/yoda-picture.png",
       "description": "Capacete Darth Vader é de tamanho compacto e possui um suporte de exibição com uma placa de identificação para completar uma peça central impressionante que aprimorará a decoração da sua casa ou local de trabalho."
+    },
+    {
+      "id": 4,
+      "categories": "console",
+      "product_name": "Console Sony Playstation 5",
+      "price": 4099.99,
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/console-ps5.png",
+      "description": "Jogar no PS5 Não Tem Limites Desfrute do carregamento do seu PS5, extremamente rápido com o SSD de altíssima velocidade."
+    },
+    {
+      "id": 5,
+      "categories": "diversos",
+      "product_name": "Camiseta Atari",
+      "price": 69.99,
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/tshirt-atari.png",
+      "description": "Atari é um clássico dos anos 1980, onde uma geração foi transformada com a chegada dos primeiros video-games."
     }
   ]
 }

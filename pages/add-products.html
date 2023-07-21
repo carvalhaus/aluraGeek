@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/add-products.css" />
     <title>Alura Geek - Home</title>
   </head>
   <body>
@@ -37,28 +38,60 @@
           <i data-feather="search" class="input-icon"></i>
         </label>
       </div>
-      <button class="btn login">Login</button>
+      <button class="btn admin">Menu administrador</button>
       <i data-feather="search" class="search"></i>
     </header>
 
-    <main></main>
+    <main class="main">
+      <div class="upload-products">
+        <h3>Adicionar novo produto</h3>
+        <form class="upload-form">
+          <label for="url-image" class="upload-input">
+            <p>URL da imagem</p>
+            <input type="text" id="url-image" />
+          </label>
+          <label for="categories" class="upload-input">
+            <p>Categoria</p>
+            <input type="text" id="categories" />
+          </label>
+          <label for="product-name" class="upload-input">
+            <p>Nome do produto</p>
+            <input type="text" id="product-name" />
+          </label>
+          <label for="price" class="upload-input">
+            <p>Preço do produto</p>
+            <input type="text" id="price" />
+          </label>
+          <textarea
+            name="description"
+            id="description"
+            cols="21"
+            rows="4"
+            placeholder="Descrição do produto"
+            class="upload-input"
+          ></textarea>
+          <button class="btn-filled upload-btn">Adicionar produto</button>
+        </form>
+      </div>
+    </main>
 
     <footer>
       <section class="footer">
-        <img
-          src="../assets/images/logo.svg"
-          alt="Logo AluraGeek"
-          class="logo footer"
-        />
-
-        <ul class="list">
-          <li>Quem somos nós</li>
-          <li>Política de privacidade</li>
-          <li>Programa fidelidade</li>
-          <li>Nossas lojas</li>
-          <li>Quero ser franqueado</li>
-          <li>Anuncie aqui</li>
-        </ul>
+        <div class="links">
+          <img
+            src="../assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo footer"
+          />
+          <ul class="list">
+            <li>Quem somos nós</li>
+            <li>Política de privacidade</li>
+            <li>Programa fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+        </div>
 
         <div class="contact-us">
           <p>Fale conosco</p>

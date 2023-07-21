@@ -1,0 +1,84 @@
+.btn.admin {
+  padding: 0.75rem;
+  width: 11rem;
+}
+
+.main {
+  background: var(--black-05);
+}
+
+.upload-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.upload-products > h3 {
+  margin-bottom: 0.5rem;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-input {
+  background: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.upload-input > p {
+  color: var(--black-50);
+  font-size: 0.875rem;
+}
+
+.upload-input > input {
+  border: none;
+  margin-top: 0.25rem;
+  outline: none;
+  width: 100%;
+}
+
+.upload-form > textarea {
+  outline: none;
+  resize: none;
+}
+
+.upload-form > textarea::placeholder {
+  color: var(--black-50);
+  font-size: 0.875rem;
+}
+
+.upload-btn {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .upload-products {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .upload-products {
+    margin: auto;
+    padding: 3rem;
+    width: 50%;
+  }
+
+  .upload-products > h3 {
+    font-size: 2rem;
+  }
+}

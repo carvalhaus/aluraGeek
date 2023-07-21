@@ -45,23 +45,37 @@
     <main class="main">
       <div class="upload-products">
         <h3>Adicionar novo produto</h3>
-        <form class="upload-form">
+        <form class="upload-form" data-form>
           <label for="url-image" class="upload-input">
             <p>URL da imagem</p>
-            <input type="text" id="url-image" />
+            <input type="text" id="url-image" data-url-image />
           </label>
+
           <label for="categories" class="upload-input">
             <p>Categoria</p>
-            <input type="text" id="categories" />
+            <input
+              list="categories"
+              name="categories"
+              data-categories
+              autocomplete="off"
+            />
+            <datalist id="categories">
+              <option value="starwars"></option>
+              <option value="console"></option>
+              <option value="diversos"></option>
+            </datalist>
           </label>
+
           <label for="product-name" class="upload-input">
             <p>Nome do produto</p>
-            <input type="text" id="product-name" />
+            <input type="text" id="product-name" data-product-name />
           </label>
+
           <label for="price" class="upload-input">
             <p>Preço do produto</p>
-            <input type="text" id="price" />
+            <input type="text" id="price" data-price />
           </label>
+
           <textarea
             name="description"
             id="description"
@@ -69,7 +83,10 @@
             rows="4"
             placeholder="Descrição do produto"
             class="upload-input"
-          ></textarea>
+            data-description
+          >
+          </textarea>
+
           <button class="btn-filled upload-btn">Adicionar produto</button>
         </form>
       </div>
@@ -122,4 +139,5 @@
   <script>
     feather.replace();
   </script>
+  <script type="module" src="../assets/js/uploadProducts.js"></script>
 </html>

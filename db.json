@@ -39,6 +39,14 @@
       "price": 69.99,
       "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/tshirt-atari.png",
       "description": "Atari é um clássico dos anos 1980, onde uma geração foi transformada com a chegada dos primeiros video-games."
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/console-gameboy.png",
+      "categories": "console",
+      "product_name": "Console Game Boy",
+      "price": "599.28",
+      "description": "Game Boy clássico, diversão portátil garantida! Tela verde retroiluminada, 30h de bateria, jogue os melhores títulos da Nintendo.",
+      "id": 6
     }
   ]
 }

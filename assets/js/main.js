@@ -5,10 +5,10 @@ const consoleList = document.querySelector("[data-console-list]");
 const diversosList = document.querySelector("[data-diversos-list]");
 
 function buildProduct(name, price, image) {
-  const products = document.createElement("div");
-  products.className = "product";
+  const product = document.createElement("div");
+  product.className = "product";
 
-  products.innerHTML = `
+  product.innerHTML = `
       <img
         src = ${image}
         alt = ${name}
@@ -21,7 +21,7 @@ function buildProduct(name, price, image) {
       </a>
     `;
 
-  return products;
+  return product;
 }
 
 async function showProducts() {

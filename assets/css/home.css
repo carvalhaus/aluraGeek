@@ -1,3 +1,7 @@
+main {
+  background-color: transparent;
+}
+
 .btn.login {
   width: 8.313rem;
 }
@@ -7,8 +11,7 @@
 }
 
 .ads-bg {
-  background: no-repeat
-    url("https://images.unsplash.com/photo-1574387324389-2366ec67539c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80");
+  background: no-repeat url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
   height: 12rem;

@@ -17,16 +17,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/products.css" />
     <title>Alura Geek - Home</title>
   </head>
   <body>
     <header class="header">
       <div class="nav">
-        <img
-          src="../assets/images/logo.svg"
-          alt="Logo AluraGeek"
-          class="logo"
-        />
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo"
+          />
+        </a>
         <label for="search-bar" class="search-bar">
           <input
             type="text"
@@ -37,28 +40,39 @@
           <i data-feather="search" class="input-icon"></i>
         </label>
       </div>
-      <button class="btn login">Login</button>
       <i data-feather="search" class="search"></i>
     </header>
 
-    <main></main>
+    <main>
+      <section class="all-products">
+        <div class="all-products__title">
+          <h3>Todos os produtos</h3>
+          <a href="../pages/add-products.html">
+            <button class="btn-filled add">Adicionar produto</button>
+          </a>
+        </div>
+
+        <div class="products" data-products></div>
+      </section>
+    </main>
 
     <footer>
       <section class="footer">
-        <img
-          src="../assets/images/logo.svg"
-          alt="Logo AluraGeek"
-          class="logo footer"
-        />
-
-        <ul class="list">
-          <li>Quem somos nós</li>
-          <li>Política de privacidade</li>
-          <li>Programa fidelidade</li>
-          <li>Nossas lojas</li>
-          <li>Quero ser franqueado</li>
-          <li>Anuncie aqui</li>
-        </ul>
+        <div class="links">
+          <img
+            src="../assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo footer"
+          />
+          <ul class="list">
+            <li>Quem somos nós</li>
+            <li>Política de privacidade</li>
+            <li>Programa fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+        </div>
 
         <div class="contact-us">
           <p>Fale conosco</p>
@@ -89,4 +103,5 @@
   <script>
     feather.replace();
   </script>
+  <script type="module" src="../assets/js/products.js"></script>
 </html>

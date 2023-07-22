@@ -17,16 +17,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/login.css" />
     <title>Alura Geek - Home</title>
   </head>
   <body>
     <header class="header">
       <div class="nav">
-        <img
-          src="../assets/images/logo.svg"
-          alt="Logo AluraGeek"
-          class="logo"
-        />
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo"
+          />
+        </a>
         <label for="search-bar" class="search-bar">
           <input
             type="text"
@@ -37,28 +40,60 @@
           <i data-feather="search" class="input-icon"></i>
         </label>
       </div>
-      <button class="btn login">Login</button>
       <i data-feather="search" class="search"></i>
     </header>
 
-    <main></main>
+    <main>
+      <section class="login">
+        <p>Inicar Sessão</p>
+
+        <form class="login__form" data-form-login>
+          <label for="email" class="input-label">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Escreva seu e-mail"
+              required
+              autocomplete="off"
+              data-email
+            />
+          </label>
+
+          <label for="password" class="input-label">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Escreva sua senha"
+              required
+              autocomplete="off"
+              data-password
+            />
+          </label>
+
+          <button class="btn-filled btn-login">Entrar</button>
+        </form>
+      </section>
+    </main>
 
     <footer>
       <section class="footer">
-        <img
-          src="../assets/images/logo.svg"
-          alt="Logo AluraGeek"
-          class="logo footer"
-        />
-
-        <ul class="list">
-          <li>Quem somos nós</li>
-          <li>Política de privacidade</li>
-          <li>Programa fidelidade</li>
-          <li>Nossas lojas</li>
-          <li>Quero ser franqueado</li>
-          <li>Anuncie aqui</li>
-        </ul>
+        <div class="links">
+          <img
+            src="../assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo footer"
+          />
+          <ul class="list">
+            <li>Quem somos nós</li>
+            <li>Política de privacidade</li>
+            <li>Programa fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+        </div>
 
         <div class="contact-us">
           <p>Fale conosco</p>
@@ -89,4 +124,5 @@
   <script>
     feather.replace();
   </script>
+  <script type="module" src="../assets/js/login.js"></script>
 </html>

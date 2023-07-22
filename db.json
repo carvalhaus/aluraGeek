@@ -48,5 +48,12 @@
       "description": "Game Boy clássico, diversão portátil garantida! Tela verde retroiluminada, 30h de bateria, jogue os melhores títulos da Nintendo.",
       "id": 6
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "password": "admin"
+    }
   ]
 }

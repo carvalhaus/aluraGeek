@@ -29,6 +29,7 @@ a {
 }
 
 main {
+  background: var(--black-05);
   width: 100%;
 }
 
@@ -186,6 +187,7 @@ main {
 }
 
 .developer {
+  background: #fff;
   font-weight: 500;
   padding: 2rem;
   text-align: center;

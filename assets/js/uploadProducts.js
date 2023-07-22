@@ -21,8 +21,8 @@ async function createProduct(event) {
     );
 
     window.location.href = "../pages/products.html";
-  } catch (e) {
-    alert(e);
+  } catch {
+    alert("Não foi possível cadastrar o produto!");
   }
 }
 

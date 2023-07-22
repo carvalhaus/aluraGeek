@@ -38,7 +38,18 @@ async function uploadProduct(
   return connectionJSON;
 }
 
+async function userLogin() {
+  try {
+    const connection = await fetch("http://localhost:3000/users");
+    const connectionJson = await connection.json();
+    return connectionJson;
+  } catch {
+    alert("Erro ao conectar com servidor!");
+  }
+}
+
 export const connectApi = {
   listProducts,
   uploadProduct,
+  userLogin,
 };

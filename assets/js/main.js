@@ -5,7 +5,7 @@ const consoleList = document.querySelector("[data-console-list]");
 const diversosList = document.querySelector("[data-diversos-list]");
 
 function buildProduct(name, price, image) {
-  const product = document.createElement("div");
+  const product = document.createElement("li");
   product.className = "product";
 
   product.innerHTML = `
@@ -26,6 +26,7 @@ function buildProduct(name, price, image) {
 
 async function showProducts() {
   const products = await connectApi.listProducts();
+
   products.forEach((element) => {
     switch (element.categories) {
       case "starwars":
@@ -45,6 +46,5 @@ async function showProducts() {
         break;
     }
   });
-}
 
 showProducts();

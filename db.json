@@ -47,6 +47,30 @@
       "price": "599.28",
       "description": "Game Boy clássico, diversão portátil garantida! Tela verde retroiluminada, 30h de bateria, jogue os melhores títulos da Nintendo.",
       "id": 6
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/baby-yoda-toy.png",
+      "categories": "starwars",
+      "product_name": "Boneco Baby Yoda",
+      "price": "289.99",
+      "description": "Inspirado na série 'The Mandalorian' da Disney a adorável figura com pele verde orelhas grandes e olhos grandes parece um bebê Yoda mas é chamada de The Child\". O brinquedo de pelúcia tem um corpo macio além de uma base resistente e mais pesada perfeita para abraçar ou exibir como um colecionável",
+      "id": 7
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/kylo-ren-picture.png",
+      "categories": "starwars",
+      "product_name": "Quadro Kylo Ren",
+      "price": "140.16",
+      "description": "Quadro Decorativo Kylo Ren Star Wars com Moldura e Vidro",
+      "id": 8
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/stormtroopes-picture.png",
+      "categories": "starwars",
+      "product_name": "Quadro StormTrooper",
+      "price": "99.90",
+      "description": "Quadro StormTrooper com moldura em madeira e vidro na parte frontal",
+      "id": 9
     }
   ],
   "users": [

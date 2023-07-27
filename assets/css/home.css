@@ -130,6 +130,10 @@ main {
     flex-wrap: nowrap;
   }
 
+  .products li:nth-child(5) {
+    display: none;
+  }
+
   .product {
     width: 23.5%;
   }

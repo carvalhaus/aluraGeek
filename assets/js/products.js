@@ -3,7 +3,7 @@ import { connectApi } from "./connectApi.js";
 const allProducts = document.querySelector("[data-products]");
 
 function buildProduct(name, price, image, id) {
-  const product = document.createElement("div");
+  const product = document.createElement("li");
   product.className = "product";
 
   product.innerHTML = `

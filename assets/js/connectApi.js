@@ -48,8 +48,26 @@ async function userLogin() {
   }
 }
 
+async function sendMessage(name, message) {
+  const connection = await fetch("http://localhost:3000/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      contact_name: name,
+      message: message,
+    }),
+  });
+
+  const messageJson = await connection.json();
+
+  return messageJson;
+}
+
 export const connectApi = {
   listProducts,
   uploadProduct,
   userLogin,
+  sendMessage,
 };

@@ -71,6 +71,78 @@
       "price": "99.90",
       "description": "Quadro StormTrooper com moldura em madeira e vidro na parte frontal",
       "id": 9
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/console-xbox-series-x.png",
+      "categories": "console",
+      "product_name": "Console Xbox Series X",
+      "price": "4053.00",
+      "description": "Xbox Series você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar novos desafios para jogadores novatos e especialistas.",
+      "id": 10
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/console-nintendo.png",
+      "categories": "console",
+      "product_name": "Console Nintendo",
+      "price": "1999.99",
+      "description": "Console Nintendo clássico, para os verdadeiros amantes de vídeo-games.",
+      "id": 11
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/joystick-switch.png",
+      "categories": "console",
+      "product_name": "Controle Console Nintendo Switch",
+      "price": "426.55",
+      "description": "Controle para console Nintendo Switch",
+      "id": 12
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/joystick-xbox.png",
+      "categories": "console",
+      "product_name": "Controle Xbox Series X",
+      "price": "399.00",
+      "description": "Controle para console Xbox Series X",
+      "id": 13
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/tshirt-snes.png",
+      "categories": "diversos",
+      "product_name": "Camiseta Super Nintendo",
+      "price": "69.99",
+      "description": "Camiseta do clássico Super Nintendo",
+      "id": 14
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/sonic-toy.png",
+      "categories": "diversos",
+      "product_name": "Boneco Sonic",
+      "price": "99.90",
+      "description": "Boneco personagem Sonic.",
+      "id": 15
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/time-traveller.png",
+      "categories": "diversos",
+      "product_name": "Relógio de Cabeceira - Máquina do Tempo",
+      "price": "299.99",
+      "description": "Relógio estilo máquina do tempo, com formato clássico dos anos 70",
+      "id": 16
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/playstation-vr2.png",
+      "categories": "diversos",
+      "product_name": "PlayStation VR 2",
+      "price": "4049.99",
+      "description": "VR2 faz você experimentar a revolucionária tecnologia do Playstation VR2 Sense com detecção de movimento dos olhos, resposta tátil de headset e áudio em 3D que, combinada aos novos controles intuitivos, cria sensações e emoções profundamente realistas nos jogos compatíveis.",
+      "id": 17
+    },
+    {
+      "url_image": "https://raw.githubusercontent.com/carvalhaus/aluraGeek/main/assets/images/pikachu-toy.png",
+      "categories": "diversos",
+      "product_name": "Boneco Pikachu",
+      "price": "369.99",
+      "description": "Boneco pokemon Pikachu tamanho humano.",
+      "id": 18
     }
   ],
   "users": [
@@ -78,6 +150,13 @@
       "id": 1,
       "email": "admin@admin.com",
       "password": "admin"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "contact_name": "Renan",
+      "message": "Poderiam oferecer produtos de RPG?"
     }
   ]
 }

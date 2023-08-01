@@ -71,6 +71,10 @@ main {
   flex-wrap: wrap;
 }
 
+.products li:nth-child(n + 5) {
+  display: none;
+}
+
 .product {
   align-items: flex-start;
   display: flex;
@@ -130,10 +134,6 @@ main {
     flex-wrap: nowrap;
   }
 
-  .products li:nth-child(5) {
-    display: none;
-  }
-
   .product {
     width: 23.5%;
   }
@@ -142,6 +142,10 @@ main {
 @media screen and (min-width: 1024px) {
   .ads-text {
     padding: 2rem 4rem;
+  }
+
+  .products li:nth-child(n + 5) {
+    display: flex;
   }
 
   .products-list {

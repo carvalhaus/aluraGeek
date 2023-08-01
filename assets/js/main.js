@@ -46,5 +46,6 @@ async function showProducts() {
         break;
     }
   });
+}
 
 showProducts();

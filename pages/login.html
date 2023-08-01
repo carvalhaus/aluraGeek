@@ -97,21 +97,20 @@
 
         <div class="contact-us">
           <p>Fale conosco</p>
-          <form>
+          <form data-contact-form>
             <label for="name" class="name">
               <p>Nome</p>
-              <input type="text" />
+              <input type="text" id="name" minlength="3" required data-name />
             </label>
             <textarea
-              name="message"
-              id="message"
               class="message"
-              cols="30"
-              rows="5"
               placeholder="Escreva um mensagem"
+              minlength="5"
+              required
+              data-message
             ></textarea>
+            <button class="btn-filled" data-contact-btn>Enviar mensagem</button>
           </form>
-          <button class="btn-filled">Enviar mensagem</button>
         </div>
       </section>
 
@@ -125,4 +124,5 @@
     feather.replace();
   </script>
   <script type="module" src="../assets/js/login.js"></script>
+  <script type="module" src="../assets/js/contact-us.js"></script>
 </html>

@@ -157,6 +157,11 @@
       "id": 1,
       "contact_name": "Renan",
       "message": "Poderiam oferecer produtos de RPG?"
+    },
+    {
+      "contact_name": "Manoel",
+      "message": "Obrigado pela qualidade dos produtos",
+      "id": 2
     }
   ]
 }

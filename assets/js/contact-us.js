@@ -11,11 +11,10 @@ async function contactUs(event) {
   try {
     await connectApi.sendMessage(contactName, message);
     alert("Mensagem enviada com sucesso!");
+    window.location.reload();
   } catch {
     alert("Não foi possível salva sua mensagem!");
   }
 }
 
-contactForm.addEventListener("submit", (event) => {
-  console.log(event);
-});
+contactForm.addEventListener("submit", (event) => contactUs(event));

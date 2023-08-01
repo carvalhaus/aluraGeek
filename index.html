@@ -107,11 +107,12 @@
           <form data-contact-form>
             <label for="name" class="name">
               <p>Nome</p>
-              <input type="text" id="name" required data-name />
+              <input type="text" id="name" minlength="3" required data-name />
             </label>
             <textarea
               class="message"
               placeholder="Escreva um mensagem"
+              minlength="5"
               required
               data-message
             ></textarea>
@@ -130,5 +131,5 @@
     feather.replace();
   </script>
   <script type="module" src="assets/js/main.js"></script>
-  <script src="assets/js/contact-us.js"></script>
+  <script type="module" src="assets/js/contact-us.js"></script>
 </html>

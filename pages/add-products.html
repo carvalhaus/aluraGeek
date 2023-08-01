@@ -50,8 +50,9 @@
         <form class="upload-form" data-form>
           <label for="url-image" class="upload-input">
             <p>URL da imagem</p>
-            <input type="text" id="url-image" data-url-image />
+            <input type="text" id="url-image" name="url-image" required data-url-image />
           </label>
+          <span class="mensagem-erro"></span>
 
           <label for="categories" class="upload-input">
             <p>Categoria</p>
@@ -60,6 +61,7 @@
               name="categories"
               data-categories
               autocomplete="off"
+              required
             />
             <datalist id="categories">
               <option value="starwars"></option>
@@ -70,12 +72,12 @@
 
           <label for="product-name" class="upload-input">
             <p>Nome do produto</p>
-            <input type="text" id="product-name" data-product-name />
+            <input type="text" id="product-name" name="product-name" required data-product-name />
           </label>
 
           <label for="price" class="upload-input">
             <p>Preço do produto</p>
-            <input type="text" id="price" data-price />
+            <input type="text" id="price" name="price" required data-price />
           </label>
 
           <textarea
@@ -85,6 +87,7 @@
             rows="4"
             placeholder="Descrição do produto"
             class="upload-input"
+            required
             data-description
           ></textarea>
 
@@ -113,21 +116,20 @@
 
         <div class="contact-us">
           <p>Fale conosco</p>
-          <form>
+          <form data-contact-form>
             <label for="name" class="name">
               <p>Nome</p>
-              <input type="text" />
+              <input type="text" id="name" minlength="3" required data-name />
             </label>
             <textarea
-              name="message"
-              id="message"
               class="message"
-              cols="30"
-              rows="5"
               placeholder="Escreva um mensagem"
+              minlength="5"
+              required
+              data-message
             ></textarea>
+            <button class="btn-filled" data-contact-btn>Enviar mensagem</button>
           </form>
-          <button class="btn-filled">Enviar mensagem</button>
         </div>
       </section>
 
@@ -141,4 +143,5 @@
     feather.replace();
   </script>
   <script type="module" src="../assets/js/uploadProducts.js"></script>
+  <script type="module" src="../assets/js/contact-us.js"></script>
 </html>

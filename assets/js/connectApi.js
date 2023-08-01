@@ -24,7 +24,7 @@ async function uploadProduct(
       url_image: url_image,
       categories: categories,
       product_name: productName,
-      price: price,
+      price: parseFloat(price),
       description: description,
     }),
   });

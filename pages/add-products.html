@@ -50,9 +50,17 @@
         <form class="upload-form" data-form>
           <label for="url-image" class="upload-input">
             <p>URL da imagem</p>
-            <input type="text" id="url-image" name="url-image" required data-url-image />
+            <input
+              type="url"
+              id="url-image"
+              name="url_image"
+              pattern="https://.*"
+              size="30"
+              title="Insira uma URL válida!"
+              required
+              data-url-image
+            />
           </label>
-          <span class="mensagem-erro"></span>
 
           <label for="categories" class="upload-input">
             <p>Categoria</p>
@@ -72,12 +80,28 @@
 
           <label for="product-name" class="upload-input">
             <p>Nome do produto</p>
-            <input type="text" id="product-name" name="product-name" required data-product-name />
+            <input
+              type="text"
+              id="product-name"
+              name="product-name"
+              minlength="4"
+              required
+              data-product-name
+            />
           </label>
 
           <label for="price" class="upload-input">
             <p>Preço do produto</p>
-            <input type="text" id="price" name="price" required data-price />
+            <input
+              type="text"
+              id="price"
+              name="price"
+              pattern="^\d*(\.\d{2}$)?"
+              title="Por favor insira os valores com
+            ponto. '1.99'"
+              required
+              data-price
+            />
           </label>
 
           <textarea
@@ -87,6 +111,7 @@
             rows="4"
             placeholder="Descrição do produto"
             class="upload-input"
+            maxlength="100"
             required
             data-description
           ></textarea>
@@ -144,4 +169,5 @@
   </script>
   <script type="module" src="../assets/js/uploadProducts.js"></script>
   <script type="module" src="../assets/js/contact-us.js"></script>
+  <!-- <script src="../assets/js/form-validate.js"></script> -->
 </html>

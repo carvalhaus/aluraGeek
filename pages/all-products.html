@@ -16,15 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/products.css" />
+    <link rel="stylesheet" href="../assets/css/all-products.css" />
     <title>Alura Geek - Home</title>
   </head>
   <body>
     <header class="header">
       <div class="nav">
-        <a href="index.html">
-          <img src="assets/images/logo.svg" alt="Logo AluraGeek" class="logo" />
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo.svg"
+            alt="Logo AluraGeek"
+            class="logo"
+          />
         </a>
         <label for="search-bar" class="search-bar">
           <input
@@ -36,51 +41,16 @@
           <i data-feather="search" class="input-icon"></i>
         </label>
       </div>
-      <a href="pages/login.html"><button class="btn login">Login</button></a>
       <i data-feather="search" class="search"></i>
     </header>
 
     <main>
-      <section class="ads">
-        <div class="ads-bg"></div>
-        <div class="ads-text">
-          <h2>Julho Promocional</h2>
-          <p>Produtos selecionados com 33% de desconto</p>
-          <button class="btn-filled ads-btn">Ver Ofertas</button>
-        </div>
-      </section>
-
-      <section class="products-list" id="starwars">
-        <div class="title">
-          <h3>Star Wars</h3>
-          <a href="/pages/all-products.html" class="more"
-            >Ver tudo <i data-feather="arrow-right" class="arrow"></i>
-          </a>
+      <section class="all-products">
+        <div class="all-products__title">
+          <h3>Todos os produtos</h3>
         </div>
 
-        <ul class="products" data-starwars-list></ul>
-      </section>
-
-      <section class="products-list" id="consoles">
-        <div class="title">
-          <h3>Consoles</h3>
-          <a href="/pages/all-products.html" class="more"
-            >Ver tudo <i data-feather="arrow-right" class="arrow"></i>
-          </a>
-        </div>
-
-        <ul class="products" data-console-list></ul>
-      </section>
-
-      <section class="products-list" id="random">
-        <div class="title">
-          <h3>Diversos</h3>
-          <a href="/pages/all-products.html" class="more"
-            >Ver tudo <i data-feather="arrow-right" class="arrow"></i>
-          </a>
-        </div>
-
-        <ul class="products" data-diversos-list></ul>
+        <ul class="products" data-products></ul>
       </section>
     </main>
 
@@ -88,7 +58,7 @@
       <section class="footer">
         <div class="links">
           <img
-            src="assets/images/logo.svg"
+            src="../assets/images/logo.svg"
             alt="Logo AluraGeek"
             class="logo footer"
           />
@@ -130,6 +100,6 @@
   <script>
     feather.replace();
   </script>
-  <script type="module" src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/contact-us.js"></script>
+  <script type="module" src="../assets/js/products.js"></script>
+  <script type="module" src="../assets/js/contact-us.js"></script>
 </html>

@@ -56,8 +56,9 @@
 }
 
 .product .product-icon {
-  filter: drop-shadow(2px 2px 1px rgb(255 255 255/ 0.4));
+  cursor: pointer;
   display: inline-block;
+  filter: drop-shadow(2px 2px 1px rgb(180 180 180/ 0.5));
   height: 1rem;
   width: 1rem;
 }

@@ -43,7 +43,7 @@ function buildProduct(name, price, image, id) {
   return product;
 }
 
-async function showProducts() {
+export async function showProducts() {
   const products = await connectApi.listProducts();
   products.forEach((element) => {
     allProducts.appendChild(
